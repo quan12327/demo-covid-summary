@@ -1,0 +1,43 @@
+@use '../utils' as *;
+@use '../globals' as *;
+
+button{
+    @include texttheme(black);
+    border-radius: rem(7);
+    height: rem(25);
+}
+input{
+    @include texttheme(black);
+}
+
+.text{
+    margin: rem(30) 0;
+    text-align: center;
+}
+
+#country{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: rem(20);
+}
+
+#case{
+    @include texttheme(var(--case));
+}
+
+#deaths{
+    @include texttheme(var(--death));
+}
+
+#recovered{
+    @include texttheme(var(--recovered));
+}
+
+#tb-2{
+    #country{
+        border: none;
+    }
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/index.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="">Tra cứu dữ liệu nCovid-19</h1>
+        <div class="search">
+            <input id="myinput" placeholder="Nhập mã/tên quốc gia" type="text">
+            <button>Xem</button>
+        </div>
+        
+    </div>
+    <div class="table">
+        <table id='tb-1'>
+            <tr>
+              <th>Quốc gia</th>
+              <th>Số ca nhiễm</th>
+              <th>Số ca nhiễm hôm nay</th>
+              <th>Số ca chết</th>
+              <th>Số ca chết hôm nay</th>
+              <th>Số ca hồi phục</th>
+              <th>Đang điều trị</th>
+            </tr>
+            <tr>
+                <td id="country"></td>
+                <td id="case"></td>
+                <td id="todayCases"></td>
+                <td id="deaths"></td>
+                <td id="todayDeaths"></td>
+                <td id="recovered"></td>
+                <td id="active"></td>
+            </tr>
+          </table>
+          <div class="text"><p>*Viêt Nam chung tay chống dịch nCovid-19 cùng thế giới</p></div>
+    </div>
+    <div class="table-2">
+        <table id="tb-2">
+        </table>
+    </div>
+    <div class="global-btn">
+        <button class="see_more">Xem thêm</button>
+    </div>
+    <script src="dist/js/script.js"></script>
+</body>
+</html>

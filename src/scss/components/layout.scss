@@ -1,0 +1,39 @@
+@use '../utils' as *;
+@use '../globals' as *;
+
+.header{
+    overflow: hidden;
+    h1{
+        color:var(--title);
+        margin-top: rem(30);
+        text-align: center;
+    }
+    .search{
+        float:right;
+        margin: rem(30) rem(150);
+    }
+
+}
+
+table{
+    width: 85%;
+    margin-left: rem(100);
+        background-color: var(--tr);
+        text-align: center;
+        td{
+            border:2px solid var(--border);
+            width: rem(220);
+            height: rem(50);
+            font-weight: 600;
+        }
+        th{
+            border:2px solid var(--border);
+            width: rem(220);
+            height: rem(50);
+        }
+}
+
+
+.global-btn{
+  text-align: center;
+}
